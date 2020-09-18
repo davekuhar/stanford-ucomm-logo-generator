@@ -1,0 +1,640 @@
+/* These styles work with Stanford's "Redwood" theme and the WordPress block editor. */	
+/* LOGO SELECTOR PAGE */
+.generate-logo-package-button button.submit-btn, .logo-generate-btn.btn, .cancel-btn.btn, .download-btn a {
+	background-color: #007c92;
+	transition: color 0.2s ease-out, background-color 0.2s ease-out;
+	padding: 1rem 1.6rem;
+	display: inline-block;
+	color: #ffffff;
+	font-size: 0.9em;
+	font-weight: 600;
+	text-decoration: none;
+}
+.download-btn a {
+	background-color: #820000;
+}
+.generate-logo-package-button button.submit-btn:hover, .logo-generate-btn.btn:hover, .cancel-btn.btn:hover, .download-btn a:hover {
+	background-color: #2f2424;
+	text-decoration: underline;
+	color: white;
+}
+.download-btn a:hover {
+	background-color: #B1040E;
+}
+.logo-generate-btn::after, .generate-logo-package-button button.submit-btn::after, .download-btn a::after, .cancel-btn::after {
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	padding-left: 8px;
+}
+.logo-generate-btn::after {
+	content: "\f085";
+}
+.generate-logo-package-button button.submit-btn::after, .download-btn a::after {
+	content: "\f019";
+}
+.cancel-btn::after {
+	content: "\f55a";
+}
+.generate-btn-container {
+	text-align: right;
+}
+/* END LOGO SELECTOR PAGE */
+
+/* LOGO GENERATOR PAGE */
+/* override a border from their theme stylesheet */
+.site-identity-guide .dept-branding .stf-logo img {
+    border: none;
+}
+.generator-wrapper .logo-display {
+    background: white;
+    height: auto;
+    display: block;
+    width: 100%;
+    padding: 30px 10px 20px;
+    border: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	margin: 2em 0 1em;
+}
+.stf-logo {
+    margin: 0 !important;
+    position: relative;
+}
+.stf-logo img{
+	width: 146px;
+	height: 38px;
+}
+.stf-logo::after {
+    content: "";
+	height: 28px;
+    width: 1px;
+    background: black;
+    position: absolute;
+	left: 139px;
+	bottom: 15px;
+	display: inline-block;
+}
+.horizontal-school-only .stf-logo::after, .horizontal-unit-1-line .stf-logo::after{
+	bottom: -24px;
+}
+.horizontal-unit-1-line .unit-1-line-text,
+.horizontal-unit-1-line .level-text,
+.horizontal-school-only .unit-2-line-text,
+.horizontal-school-only .level-text {
+    display: none;
+}
+.horizontal-unit-1-line .logo-content,
+.horizontal-school-only .logo-content {
+    display: flex;
+}
+.horizontal-unit-1-line .unit-2-line-text {
+	margin-left: 0;
+	padding-top: 2px;
+	font-size: 22px;
+    text-transform: capitalize;
+}
+.horizontal-school-only .unit-1-line-text {
+    margin-left: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 0px;
+    font-size: 24px;
+}
+.horizontal-unit-2-lines-big-small .level-text,
+.horizontal-unit-2-lines .level-text,
+.horizontal-alt-school-unit-1-line .level-text,
+.horizontal-school-unit-1-line .level-text,
+.horizontal-multidisciplinary-or-long-school-name .level-text,
+.horizontal-school-unit-2-lines .level-text, .horizontal-unit-2-lines .unit-1-line-text, .horizontal-unit-level-1-line .unit-1-line-text {
+    display: none;
+}
+.horizontal-unit-2-lines-big-small .logo-content,
+.horizontal-unit-2-lines .logo-content,
+.horizontal-unit-level-1-line .logo-content,
+.horizontal-unit-2-lines-level .logo-content,
+.horizontal-alt-school-unit-1-line .logo-content,
+.horizontal-school-unit-1-line .logo-content,
+.horizontal-school-unit-2-lines .logo-content,
+.horizontal-multidisciplinary-or-long-school-name .logo-content {
+    width: 100%;
+}
+.horizontal-school-unit-1-line .logo-content {
+    position: relative;
+}
+.horizontal-unit-2-lines-big-small .main-logo-div,
+.horizontal-unit-2-lines .main-logo-div,
+.horizontal-unit-level-1-line .main-logo-div,
+.horizontal-unit-2-lines-level .main-logo-div,
+.horizontal-alt-school-unit-1-line .main-logo-div,
+.horizontal-school-unit-1-line .main-logo-div,
+.horizontal-school-unit-2-lines .main-logo-div,
+.horizontal-multidisciplinary-or-long-school-name .main-logo-div {
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+	text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+.horizontal-school-unit-2-lines .main-logo-div {
+    margin-top: 4px;
+}
+.horizontal-alt-school-unit-1-line .main-logo-div,
+.horizontal-school-unit-1-line .main-logo-div {
+    margin-top: 0;
+}
+.horizontal-multidisciplinary-or-long-school-name .main-logo-div {
+    margin-top: -6px;
+}
+.horizontal-unit-2-lines-level .main-logo-div {
+    width: 49%;
+    margin-top: 29px;
+}
+.horizontal-unit-2-lines .main-logo-div {
+    margin-top: 13px;
+}
+.horizontal-unit-2-lines-big-small .stf-logo::after,
+.horizontal-unit-2-lines .stf-logo::after,
+.horizontal-unit-level-1-line .stf-logo::after {
+    height: 34px;
+}
+.horizontal-unit-2-lines-level .stf-logo::after {
+    height: 55px;
+}
+.horizontal-school-unit-2-lines .stf-logo::after {
+    height: 48px;
+    bottom: -5px;
+}
+.horizontal-school-unit-1-line .stf-logo::after {
+    height: 50px;
+    bottom: -5px;
+}
+.horizontal-unit-2-lines-big-small .unit-1-line-text {
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.horizontal-unit-level-1-line .unit-2-line-text,
+.horizontal-unit-2-lines-level .unit-1-line-text,
+.horizontal-alt-school-unit-1-line .unit-1-line-text,
+.horizontal-school-unit-1-line .unit-1-line-text,
+.horizontal-school-unit-2-lines .unit-1-line-text,
+.horizontal-multidisciplinary-or-long-school-name .unit-2-line-text {
+    width: 50%;
+    float: left;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.horizontal-multidisciplinary-or-long-school-name .logo-content{
+    position: relative;
+}
+.horizontal-multidisciplinary-or-long-school-name .unit-2-line-text{
+    font-size: 20px;
+    float: right;
+    position: absolute;
+    right: 0;
+}
+.horizontal-unit-level-1-line .unit-2-line-text{
+    padding-left: 3px;
+}
+.horizontal-school-unit-2-lines .logo-content {
+    position: relative;
+}
+.horizontal-school-unit-2-lines .unit-1-line-text {
+    position: absolute;
+    top: 30px;
+    text-align: right;
+    padding-right: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+}
+.horizontal-unit-2-lines-level .unit-1-line-text {
+    padding-left: 3px;
+}
+.horizontal-alt-school-unit-1-line .unit-1-line-text {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.horizontal-school-unit-1-line .unit-2-line-text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50% !important;
+}
+.horizontal-unit-level-1-line .level-text,
+.horizontal-unit-2-lines-level .level-text {
+    width: 50%;
+    float: right;
+    font-size: 14px;
+    font-style: italic;
+    text-transform: capitalize;
+    padding-left: 3px;
+}
+.horizontal-unit-2-lines-level .level-text {
+    width: 51%;
+    padding-left: 5px;
+}
+.horizontal-unit-2-lines-big-small .unit-2-line-text,
+.horizontal-unit-2-lines .unit-2-line-text,
+.horizontal-unit-2-lines-level .unit-2-line-text,
+.horizontal-school-unit-2-lines .unit-2-line-text {
+    width: 50%;
+    float: right;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.horizontal-unit-2-lines .unit-1-line-text{
+    font-weight: 500;
+    padding-top: 9px;
+    line-height: 1;
+}
+.horizontal-unit-2-lines-big-small .unit-2-line-text{
+    font-weight: 500;
+}
+.horizontal-school-unit-2-lines .unit-2-line-text {
+    font-size: 22px !important;
+    line-height: 1.2;
+    margin-top: 0px;
+    width: 214px;
+    float: left;
+    margin-left: 0px;
+}
+.horizontal-alt-school-unit-1-line .unit-2-line-text,
+.horizontal-school-unit-1-line .unit-2-line-text {
+    width: 86%;
+    float: right;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.horizontal-alt-school-unit-1-line .unit-2-line-text {
+    padding-left: 91px;
+    font-weight: 500;
+    font-size: 21px;
+	margin-top: -11px;
+}
+.horizontal-school-unit-2-lines .level-text {
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 47%;
+    float: left;
+    text-align: right;
+}
+.horizontal-school-unit-1-line .unit-1-line-text {
+    font-size: 16px;
+    width: 51% !important;
+    float: left !important;
+    text-align: right;
+    padding: 0 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: -11px;
+}
+.horizontal-multidisciplinary-or-long-school-name .unit-1-line-text {
+    width: 86%;
+    float: left;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 176px;
+    margin-top: -8px;
+}
+.vertical-unit .unit-1-line-text,
+.vertical-unit .level-text,
+.vertical-unit .stf-logo::after,
+.vertical-school .unit-2-line-text,
+.vertical-school .level-text,
+.vertical-school .stf-logo::after,
+.vertical-school-unit .level-text {
+    display: none;
+}
+.vertical-unit img, .vertical-school img, .vertical-school-unit img, .vertical-school-unit-level img{
+	padding-left: 0 !important;
+	padding-bottom: 0 !important;
+}
+.vertical-unit .unit-2-line-text,
+.vertical-school .unit-1-line-text {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.vertical-school .unit-1-line-text{
+    text-transform: uppercase !important;
+}
+.vertical-unit .unit-2-line-text{
+    font-weight: 500;
+}
+.vertical-school-unit .logo-content,
+.vertical-school-unit-level .logo-content {
+    display: flex;
+    flex-direction: column;
+}
+.vertical-school-unit .unit-1-line-text,
+.vertical-school-unit-level .unit-1-line-text {
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 5px 0px;
+}
+.horizontal-unit-2-lines .unit-2-line-text, .horizontal-unit-2-lines-level .unit-2-line-text{
+    width: 176px;
+    float: left;
+    margin-left: 3px;
+}
+.horizontal-unit-2-lines-level .unit-2-line-text{
+    margin-left: 6px;
+}
+.vertical-school-unit .unit-2-line-text,
+.vertical-school-unit-level .unit-2-line-text {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 175px;
+    text-transform: capitalize;
+    line-height: 1.3;
+}
+.vertical-school-unit-level .level-text {
+    font-size: 14px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+.vertical-school-unit .stf-logo::after,
+.vertical-school-unit-level .stf-logo::after {
+    height: 1px;
+    width: 165px;
+    left: 0;
+    bottom: -75px;
+}
+/* max-width is necessary here to override theme max-width */
+.logo-form .input-wrapper input{
+    text-transform: capitalize;
+	max-width: 100%;
+}
+.horizontal-school-only input.unit-1-line, .horizontal-alt-school-unit-1-line input.unit-1-line, .horizontal-school-unit-1-line input.unit-1-line,
+.horizontal-school-unit-2-lines input.unit-1-line, .horizontal-multidisciplinary-or-long-school-name input.unit-1-line, .vertical-school input.unit-1-line,
+.vertical-school-unit input.unit-1-line, .vertical-school-unit-level input.unit-1-line{
+    text-transform: uppercase;
+}
+.logo-form input.level
+{
+    font-style: italic;
+}
+.alert {
+	padding-left: .9em;
+	font-weight: 900;
+}
+#loader {
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto !important;
+}
+.horizontal_layout_options_single img,
+.vertical_layout_options_single img {
+    height: auto;
+    background: white;
+    width: 100%;
+    margin-bottom: 5px;
+    border: 2px solid #c6c6c6;
+	padding-top: 8px;
+}
+.position-relative {
+    position: relative;
+}
+.loader-submit {
+    font-size: 10px;
+    position: absolute !important;
+    top: 10px;
+    right: 12px;
+    text-indent: -9999em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: #ffffff;
+    background: -moz-linear-gradient(left, #1da0b8 10%, rgba(255, 255, 255, 0) 42%);
+    background: -webkit-linear-gradient(left, #1da0b8 10%, rgba(255, 255, 255, 0) 42%);
+    background: -o-linear-gradient(left, #1da0b8 10%, rgba(255, 255, 255, 0) 42%);
+    background: -ms-linear-gradient(left, #1da0b8 10%, rgba(255, 255, 255, 0) 42%);
+    background: linear-gradient(to right, #1da0b8 10%, rgba(255, 255, 255, 0) 42%);
+    position: relative;
+    -webkit-animation: load3 1.4s infinite linear;
+    animation: load3 1.4s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.loader-submit:before {
+    width: 50%;
+    height: 50%;
+    background: #1da0b8;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+}
+.loader-submit:after {
+    background: #d1ecf1;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+@-webkit-keyframes load3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes load3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.generator-wrapper .logo-form .input-wrapper  input{
+    margin-bottom: 0px;
+}
+.generator-wrapper .input-wrapper span{
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #ac1212;
+    text-align: right;
+    display: block;
+}
+
+input[type="text"]:disabled {
+    color: #BDBDBD;
+    background: #E8E8E8;
+    border: none;
+}
+
+@media (max-width: 570px) {
+    .layout-wrapper {
+        width: 100% !important;
+        float: left;
+    }
+    .logo-form .btn {
+        padding: 12px 18px;
+        display: block;
+        margin: 10px auto;
+    }
+    .stf-logo {
+        font-size: 28px;
+    }
+    .stf-logo::after {
+        left: 134px;
+    }
+    .horizontal-school-only .stf-logo::after{
+        left: 128px;
+    }
+    .horizontal-school-only .unit-1-line-text{
+        margin-left: 10px;
+    }
+    .horizontal-unit-2-lines-big-small .unit-1-line-text, .horizontal-unit-2-lines-big-small .unit-2-line-text, .horizontal-unit-2-lines .unit-1-line-text, .horizontal-unit-2-lines .unit-2-line-text{
+        padding-left: 6px;
+    }
+    .horizontal-unit-2-lines-level .unit-1-line-text, .horizontal-unit-2-lines-level .unit-2-line-text, .horizontal-unit-2-lines-level .level-text{
+        padding-left: 8px;
+    }
+    .horizontal-alt-school-unit-1-line .unit-2-line-text{
+        float: left;
+        padding-left: 0;
+    }
+    .horizontal-school-only .main-logo-div {
+        width: 50%;
+    }
+    .main-logo-div {
+        padding-left: 0 !important;
+    }
+    .horizontal-alt-school-unit-1-line .unit-1-line-text {
+        font-size: 16px;
+        padding-left: 6px;
+    }
+    .horizontal-school-unit-1-line .unit-1-line-text{
+        padding: 0 8px !important;
+    }
+    .horizontal-school-unit-1-line .unit-2-line-text, .horizontal-multidisciplinary-or-long-school-name .unit-1-line-text{
+        padding-left: 6px;
+    }
+    .horizontal-multidisciplinary-or-long-school-name .unit-2-line-text{
+        padding-left: 0;
+        top: -26px;
+        right: -7px;
+    }
+    .horizontal-school-unit-1-line .unit-1-line-text {
+        position: unset;
+    }
+    .horizontal-unit-level-1-line .unit-2-line-text,
+    .horizontal-unit-2-lines-level .unit-1-line-text,
+    .horizontal-alt-school-unit-1-line .unit-1-line-text,
+    .horizontal-school-unit-1-line .unit-1-line-text,
+    .horizontal-school-unit-2-lines .unit-1-line-text,
+    .horizontal-multidisciplinary-or-long-school-name .unit-1-line-text {
+        font-size: 15px;
+    }
+    .horizontal-unit-2-lines-big-small .unit-2-line-text,
+    .horizontal-unit-2-lines .unit-2-line-text,
+    .horizontal-unit-2-lines .unit-1-line-text,
+    .horizontal-unit-2-lines-level .unit-2-line-text,
+    .horizontal-school-unit-2-lines .unit-2-line-text {
+        font-size: 15px !important;
+    }
+    .horizontal-school-unit-2-lines .level-text {
+        margin-top: 0;
+    }
+    .horizontal-unit-2-lines .unit-2-line-text, .horizontal-unit-2-lines-level .unit-2-line-text{
+        float: right;
+        width: 140px;
+		margin-top: -42px;
+    }
+	.horizontal-unit-2-lines-level .unit-2-line-text{
+		margin-top: -62px;
+	}
+	.horizontal-unit-2-lines-level .level-text{
+		margin-top: -26px;
+	}
+    .horizontal-school-unit-2-lines .unit-2-line-text{
+        width: 140px;
+        float: right;
+		margin-top: -27px;
+    }
+    .horizontal-multidisciplinary-or-long-school-name .unit-1-line-text{
+        width: 100%;
+    }
+}
+@media (min-width: 571px) and (max-width: 991px) {
+    .layout-wrapper {
+        width: 50% !important;
+        float: left;
+    }
+}
+@media (max-width: 991px) {
+    .generator-wrapper {
+        width: 100% !important;
+        float: left;
+    }
+    .generator-wrapper .logo-form {
+        width: 100%;
+    }
+    .entry-content {
+        margin: 0 15px;
+    }
+    .generator-wrapper .logo-display {
+        width: 100%;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1100px) {
+    .main-logo-div {
+        padding-left: 0 !important;
+    }
+}
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+
+    .stf-logo::after{
+        bottom: 0px;
+    }
+    .horizontal-school-unit-2-lines .stf-logo::after {
+        bottom: -20px;
+    }
+    .vertical-school-unit .stf-logo::after, .vertical-school-unit-level .stf-logo::after {
+        bottom: -43px !important;
+    }
+}}
