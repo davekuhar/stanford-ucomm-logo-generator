@@ -100,8 +100,7 @@ $horizontal_layout_options = array(
 									'logo_number'  	=> "5",
 									'p1'			=> "NAMEOFSCHOOL",
 									'p2'			=> "Your Department Name on Two Lines",
-*/
-								),
+								),*/
 								
 								array(
 									'id' 		=> "horizontal-multidisciplinary-or-long-school-name",
