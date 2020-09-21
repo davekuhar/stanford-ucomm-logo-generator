@@ -77,6 +77,9 @@ $horizontal_layout_options = array(
 									'p2'			=> "Department Name",
 								),
 								
+/* THESE ARE HIDDEN IN THE LIVE VERSION UNTIL THE DEVS GET THE RENDER FIXED
+	* @davekuhar
+	*09.21.20
 								array(
 									'id' 		=> "horizontal-school-unit-1-line",
 									'image'		=> SF_PLUGIN_URL."/assets/images/school-unit-1-line.svg",
@@ -97,6 +100,7 @@ $horizontal_layout_options = array(
 									'logo_number'  	=> "5",
 									'p1'			=> "NAMEOFSCHOOL",
 									'p2'			=> "Your Department Name on Two Lines",
+*/
 								),
 								
 								array(
