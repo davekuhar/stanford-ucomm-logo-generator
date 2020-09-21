@@ -5,7 +5,7 @@
 * Plugin URI:  http://ucomm.stanford.edu/
 * Author:      Perception System
 * Author URI:  http://www.perceptionsystem.com/
-* Version:     1.0.4
+* Version:     1.0.5
 * License:     GPL2
 * License URI: https://www.gnu.org/licenses/gpl-2.0.html
 * Text Domain: wp-stanford
@@ -46,7 +46,7 @@ if ( ! defined( 'SF_PLUGIN_URL' ) ) {
  * 
  */
 if ( ! defined( 'SF_PLUGIN_VER' ) ) {
-    define( 'SF_PLUGIN_VER', '1.0.4' );
+    define( 'SF_PLUGIN_VER', '1.0.5' );
 }
 
 function sf_public_enqueue_scripts() {
