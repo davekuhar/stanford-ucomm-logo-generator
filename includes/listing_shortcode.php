@@ -173,8 +173,8 @@ function stanford_logo_generator_callback ( $atts ) {
 			<div class="logo-form">
 				<form method="post" class="<?php echo $_GET['layout']; ?>" action="#download-btn">
 					<div class="input-wrapper">
-						<input type="text" <?php echo $disabled_1; ?> name="unit-1-line" class="unit-1-line" placeholder="School Name" onkeyup="textCounter(this,'counter-unit1',25);" maxlength="25">
-						<span id="counter-unit1">Characters left: 25</span>
+						<input type="text" <?php echo $disabled_1; ?> name="unit-1-line" class="unit-1-line" placeholder="School Name" onkeyup="textCounter(this,'counter-unit1',32);" maxlength="32">
+						<span id="counter-unit1">Characters left: 32</span>
 					</div>
 					<div class="input-wrapper">
 						<input type="text" <?php echo $disabled_2; ?> name="unit-2-line" class="unit-2-line" placeholder="Department Name" onkeyup="textCounter(this,'counter-unit2',45);" maxlength="45">
